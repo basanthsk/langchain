@@ -10,10 +10,12 @@ _EXPECTED_NUM_TOKENS = {
     "gpt-4": 12,
     "gpt-4-32k": 12,
     "gpt-3.5-turbo": 12,
+    "gpt-4o":11,
+    "gpt-4o-mini":11,
 }
 
 _MODELS = models = ["ada", "babbage", "curie", "davinci"]
-_CHAT_MODELS = ["gpt-4", "gpt-4-32k", "gpt-3.5-turbo"]
+_CHAT_MODELS = ["gpt-4", "gpt-4-32k", "gpt-3.5-turbo,gpt-4o,gpt-4o-mini"]
 
 
 @pytest.mark.parametrize("model", _MODELS)
